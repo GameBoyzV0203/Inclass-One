@@ -140,7 +140,7 @@ class War_Game:
         # Assumes hands are empty
         self.deck.shuffle()
         counter = 0
-        while(self.players[0].get_hand_size() < 26):
+        while(self.players[0].get_hand_size() < 21):
             for player in self.players:
                 player.add_card_hand(self.deck.deal())
                 counter += 1
@@ -245,7 +245,7 @@ class War_Player:
         self.record[0] += 1
 
     def add_loss(self):
-        self.record[1] += 2
+        self.record[1] += 1
 
 
     def __str__(self):
