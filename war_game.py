@@ -245,7 +245,7 @@ class War_Player:
         self.record[0] += 1
 
     def add_loss(self):
-        self.record[1] += 1
+        self.record[1] += 2
 
 
     def __str__(self):
